@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 문서 인코딩 설정 (한글 지원) -->
+    <meta charset="UTF-8" />
+
+    <!-- 반응형 웹사이트를 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 보안: XSS 공격 방지를 위한 Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" />
+
+    <!-- 페이지 제목 설정 -->
+    <title>소개 페이지 - About Page</title>
+
+    <!-- 검색엔진 최적화(SEO)를 위한 메타 설명 -->
+    <meta name="description" content="개발자 소개 및 프로젝트 정보를 확인하세요" />
+    <meta name="keywords" content="개발자, developer, 소개, about, 프로젝트, project" />
+    <meta name="author" content="개발자이름 - Developer Name" />
+
+    <!-- 파비콘 설정 (브라우저 탭 아이콘) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- 기존 CSS 파일 연결 (스타일 재사용) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 추가 스타일 (이 페이지만의 특별한 스타일) -->
+    <style>
+      /* 프로필 이미지 스타일 */
+      .profile_image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+      }
+
+      /* 스킬 태그 스타일 */
+      .skill_tag {
+        display: inline-block;
+        background: #667eea;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        margin: 0.2rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+
+      /* 네비게이션 링크 스타일 */
+      .nav_link {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 1rem;
+      }
+
+      .nav_link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 페이지 헤더 영역 -->
+    <header class="header_area">
+      <h1>개발자 소개 - About Developer</h1>
+      <p>안녕하세요! 웹 개발자입니다</p>
+
+      <!-- 간단한 내비게이션 -->
+      <nav style="margin-top: 1rem">
+        <a href="index.html" class="nav_link">홈으로 - Home</a>
+        <a href="about_page.html" class="nav_link">소개 - About</a>
+      </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="main_container">
+      <!-- 프로필 섹션 -->
+      <section class="content_card">
+        <div class="profile_image">👨‍💻</div>
+        <h2>프로필 - Profile</h2>
+        <p><strong>이름:</strong> 개발자 김코딩</p>
+        <p><strong>직업:</strong> 웹 개발자 (Web Developer)</p>
+        <p><strong>경력:</strong> 2년차 주니어 개발자</p>
+        <p><strong>위치:</strong> 서울, 대한민국</p>
+      </section>
+
+      <!-- 기술 스택 섹션 -->
+      <section class="content_card">
+        <h2>기술 스택 - Tech Stack</h2>
+        <h3>프론트엔드 - Frontend</h3>
+        <div style="margin: 1rem 0">
+          <span class="skill_tag">HTML5</span>
+          <span class="skill_tag">CSS3</span>
+          <span class="skill_tag">JavaScript</span>
+          <span class="skill_tag">React</span>
+          <span class="skill_tag">Next.js</span>
+          <span class="skill_tag">Flutter</span>
+        </div>
+
+        <h3>백엔드 - Backend</h3>
+        <div style="margin: 1rem 0">
+          <span class="skill_tag">Node.js</span>
+          <span class="skill_tag">Python</span>
+          <span class="skill_tag">MongoDB</span>
+          <span class="skill_tag">PostgreSQL</span>
+        </div>
+
+        <h3>도구 - Tools</h3>
+        <div style="margin: 1rem 0">
+          <span class="skill_tag">Git</span>
+          <span class="skill_tag">VS Code</span>
+          <span class="skill_tag">Figma</span>
+          <span class="skill_tag">Docker</span>
+        </div>
+      </section>
+
+      <!-- 프로젝트 섹션 -->
+      <section class="content_card">
+        <h2>주요 프로젝트 - Projects</h2>
+
+        <div style="margin-bottom: 2rem">
+          <h3>🌐 개인 포트폴리오 웹사이트</h3>
+          <p><strong>기술:</strong> HTML, CSS, JavaScript</p>
+          <p><strong>설명:</strong> 반응형 디자인과 모던한 UI/UX를 적용한 개인 웹사이트</p>
+          <p><strong>특징:</strong> 보안 강화, SEO 최적화, 접근성 고려</p>
+        </div>
+
+        <div style="margin-bottom: 2rem">
+          <h3>📱 날씨 앱 (Flutter)</h3>
+          <p><strong>기술:</strong> Flutter, Dart, Weather API</p>
+          <p><strong>설명:</strong> 실시간 날씨 정보를 제공하는 모바일 앱</p>
+          <p><strong>특징:</strong> 위치 기반 서비스, 7일 예보, 직관적 UI</p>
+        </div>
+
+        <div>
+          <h3>🛒 쇼핑몰 웹사이트 (Next.js)</h3>
+          <p><strong>기술:</strong> Next.js, React, TypeScript</p>
+          <p><strong>설명:</strong> 완전한 E-commerce 솔루션</p>
+          <p><strong>특징:</strong> 장바구니, 결제 시스템, 관리자 패널</p>
+        </div>
+      </section>
+
+      <!-- 목표 및 관심사 섹션 -->
+      <section class="content_card">
+        <h2>목표 및 관심사 - Goals & Interests</h2>
+        <h3>개발 목표</h3>
+        <ul>
+          <li>풀스택 개발자로 성장하기</li>
+          <li>오픈소스 프로젝트에 기여하기</li>
+          <li>사용자 경험(UX)을 중시하는 개발자 되기</li>
+          <li>새로운 기술 트렌드 지속적으로 학습하기</li>
+        </ul>
+
+        <h3 style="margin-top: 1.5rem">관심 분야</h3>
+        <ul>
+          <li>🤖 인공지능과 머신러닝</li>
+          <li>🎨 UI/UX 디자인</li>
+          <li>📊 데이터 시각화</li>
+          <li>🔒 웹 보안</li>
+          <li>♿ 웹 접근성</li>
+        </ul>
+      </section>
+
+      <!-- 연락처 섹션 -->
+      <section class="content_card">
+        <h2>연락처 - Contact Info</h2>
+        <p>📧 <strong>이메일:</strong> developer@example.com</p>
+        <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/developer</p>
+        <p>🐱 <strong>GitHub:</strong> github.com/developer</p>
+        <p>📱 <strong>전화:</strong> 010-1234-5678</p>
+
+        <div style="margin-top: 1rem; padding: 1rem; background-color: #f8f9fa; border-radius: 5px">
+          <p><strong>💡 메시지:</strong> 언제든 연락주세요! 함께 멋진 프로젝트를 만들어보아요! 😊</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- 페이지 푸터 영역 -->
+    <footer class="footer_area">
+      <p>&copy; 2024 개발자 김코딩. 모든 권리 보유. | <a href="index.html" style="color: #ccc">홈으로 돌아가기</a></p>
+    </footer>
+
+    <!-- 자바스크립트 코드 -->
+    <script>
+      // 페이지 로드 완료 시 실행되는 함수
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("소개 페이지가 성공적으로 로드되었습니다!");
+
+        // 스킬 태그 클릭 이벤트 추가
+        const skill_tags = document.querySelectorAll(".skill_tag");
+        skill_tags.forEach((tag) => {
+          tag.addEventListener("click", function () {
+            // 클릭한 스킬에 대한 간단한 정보 표시
+            const skill_name = this.textContent;
+            alert(`${skill_name}에 관심이 있으시군요! 👍`);
+          });
+
+          // 호버 효과를 위한 커서 변경
+          tag.style.cursor = "pointer";
+        });
+
+        // 프로필 이미지 클릭 이벤트
+        const profile_image = document.querySelector(".profile_image");
+        profile_image.addEventListener("click", function () {
+          // 재미있는 이모지 변경 효과
+          const emojis = ["👨‍💻", "🚀", "💡", "🎯", "⚡"];
+          const random_emoji = emojis[Math.floor(Math.random() * emojis.length)];
+          this.textContent = random_emoji;
+
+          // 3초 후 원래 이모지로 복원
+          setTimeout(() => {
+            this.textContent = "👨‍💻";
+          }, 3000);
+        });
+
+        // 프로필 이미지 호버 효과
+        profile_image.style.cursor = "pointer";
+        profile_image.title = "클릭해보세요! 😄";
+      });
+
+      // 스크롤 애니메이션 효과
+      function animate_on_scroll() {
+        const cards = document.querySelectorAll(".content_card");
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        });
+
+        cards.forEach((card) => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(20px)";
+          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(card);
+        });
+      }
+
+      // 페이지 로드 시 스크롤 애니메이션 설정
+      animate_on_scroll();
+    </script>
+  </body>
+</html>

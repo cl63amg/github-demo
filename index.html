@@ -23,12 +23,35 @@
 
     <!-- 외부 CSS 파일 연결 -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- 내비게이션 링크 스타일 추가 -->
+    <style>
+      .nav_link {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav_link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    </style>
   </head>
   <body>
     <!-- 페이지 헤더 영역 -->
     <header class="header_area">
       <h1>환영합니다! - Welcome!</h1>
       <p>나의 첫 번째 웹사이트입니다</p>
+
+      <!-- 간단한 내비게이션 메뉴 -->
+      <nav style="margin-top: 1rem">
+        <a href="index.html" class="nav_link">홈 - Home</a>
+        <a href="about_page.html" class="nav_link">소개 - About</a>
+      </nav>
     </header>
 
     <!-- 메인 콘텐츠 영역 -->
@@ -37,6 +60,7 @@
       <section class="content_card">
         <h2>소개 - Introduction</h2>
         <p>이곳은 HTML로 만든 간단한 웹사이트입니다. 앞으로 멋진 콘텐츠들로 채워나갈 예정입니다!</p>
+        <p><strong>새로운 기능:</strong> <a href="about_page.html" style="color: #667eea">개발자 소개 페이지</a>가 추가되었습니다! 🎉</p>
       </section>
 
       <!-- 기능 섹션 -->
@@ -48,6 +72,7 @@
           <li>SEO 최적화</li>
           <li>접근성 고려</li>
           <li>외부 CSS 파일 분리로 유지보수성 향상</li>
+          <li>✨ 다중 페이지 지원 (홈, 소개 페이지)</li>
         </ul>
       </section>
 
@@ -56,12 +81,13 @@
         <h2>연락처 - Contact</h2>
         <p>문의사항이 있으시면 언제든 연락주세요!</p>
         <p>이메일: example@email.com</p>
+        <p>더 자세한 정보는 <a href="about_page.html" style="color: #667eea; text-decoration: underline">소개 페이지</a>에서 확인하세요!</p>
       </section>
     </main>
 
     <!-- 페이지 푸터 영역 -->
     <footer class="footer_area">
-      <p>&copy; 2024 나의 웹사이트. 모든 권리 보유.</p>
+      <p>&copy; 2024 나의 웹사이트. 모든 권리 보유. | <a href="about_page.html" style="color: #ccc">개발자 소개</a></p>
     </footer>
 
     <!-- 자바스크립트 코드 -->
